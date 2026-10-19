@@ -92,7 +92,20 @@
                         Calculate the bill using cumulative rates. For example, the first 100 units are charged at Rs.
                         10 each, and only
                         the units above 100 are charged at the next rate.</h3>
-                    <p></p>
+                    <p>
+                        let units = Number(prompt("Enter Units"));
+    let bill = 0;
+    if (units <= 100) {
+        bill = units * 10;
+    }
+    else if (units <= 200) {
+        bill = 100 * 10 + (units - 100) * 15;
+    }
+    else {
+        bill = 100 * 10 + 100 * 15 + (units - 200) * 20;
+    }
+    console.log(bill);
+                    </p>
 
 
 
@@ -197,6 +210,19 @@
     else {
         console.log('senior citizen')
     }
+
+    let units = Number(prompt("Enter Units"));
+    let bill = 0;
+    if (units <= 100) {
+        bill = units * 10;
+    }
+    else if (units <= 200) {
+        bill = 100 * 10 + (units - 100) * 15;
+    }
+    else {
+        bill = 100 * 10 + 100 * 15 + (units - 200) * 20;
+    }
+    console.log(bill);
 
     let trafficLight = 'red'
     if (trafficLight === 'green') {
