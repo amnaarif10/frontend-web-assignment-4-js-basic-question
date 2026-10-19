@@ -9,6 +9,7 @@
 
 <body>
     <h1>JAVA SCRIPT QUISTIONS:</h1>
+    
     <h3>
         Question 1: First and Last Name
         Create two variables: firstName and lastName. Store your first and last name in them and print your full name.
@@ -19,239 +20,181 @@
         console.log(FirstName + ' ' + LastName)
     </p>
 
-
-
     <h3>
         Question 2: Arithmetic Operations
         Create three variables: num1, num2, and num3. Perform the following operations using all three values:
-
-        Addition
-
-        Subtraction
-
-        Multiplication
-
-        Division
-
+        Addition, Subtraction, Multiplication, Division.
         Display the result of each operation.
     </h3>
     <p>
-        let num1 = 3
-        let num2 = 6
-        let num3 = 9
-        console.log(num1 + num2 + num3)
-        console.log(num1 - num2 - num3)
-        console.log(num1 * num2 * num3)
-        console.log(num1 / num2 / num3)
+        let num1 = 3;
+        let num2 = 6;
+        let num3 = 9;
+        console.log(num1 + num2 + num3);
+        console.log(num1 - num2 - num3);
+        console.log(num1 * num2 * num3);
+        console.log(num1 / num2 / num3);
     </p>
-
-
 
     <h3>
         Question 3: Temperature Checker
         Take the temperature from the user.
-
         If the temperature is 0°C or below, print "Freezing".
-
         Otherwise, print "Not freezing".
     </h3>
     <p>
-        let temp = Number(prompt('enter temperature: '))
-        if (temp <= 0) { console.log('freezing') } else { console.log('not freezing') } </p>
+        let temp = Number(prompt('enter temperature: '));
+        if (temp <= 0) { 
+            console.log('freezing'); 
+        } else { 
+            console.log('not freezing'); 
+        }
+    </p>
 
+    <h3>
+        Question 4: Age Category
+        Take the user's age and display the appropriate category:
+        0–12: Child, 13–19: Teenager, 20–59: Adult, 60 and above: Senior Citizen
+    </h3>
+    <p>
+        let age = Number(prompt('enter your age'));
+        if (0 <= 12) { 
+            console.log('child'); 
+        } else if (13 <= 19) { 
+            console.log('teenager'); 
+        } else if (20 <= 59) {
+            console.log('adult'); 
+        } else { 
+            console.log('senior citizen'); 
+        }
+    </p>
 
+    <h3>
+        Question 5: Electricity Bill Calculator
+        Take the number of electricity units consumed and calculate the bill using cumulative rates.
+    </h3>
+    <p>
+        let units = Number(prompt("Enter Units"));
+        let bill = 0;
+        if (units <= 100) { 
+            bill = units * 10; 
+        } else if (units <= 200) { 
+            bill = 100 * 10 + (units - 100) * 15; 
+        } else { 
+            bill = 100 * 10 + 100 * 15 + (units - 200) * 20; 
+        } 
+        console.log(bill);
+    </p>
 
-            <h3>
-                Question 4: Age Category
-                Take the user's age and display the appropriate category:
+    <h3>
+        Question 6: Traffic Light
+        Take a traffic light color as input. Red: "STOP", Yellow: "READY", Green: "GO", Any other: "INVALID COLOR".
+    </h3>
+    <p>
+        let trafficLight = 'red';
+        if (trafficLight === 'green') {
+            console.log('GO');
+        } else if (trafficLight === 'red') {
+            console.log('STOP');
+        } else if (trafficLight === 'yellow') {
+            console.log('READY');
+        } else {
+            console.log('INVALID COLOR');
+        }
+    </p>
 
-                0–12: Child
+    <h3>
+        Question 7: Pocket Money Checker
+        Take the amount of pocket money. If greater than or equal to Rs. 500, print "you can buy a gift". Otherwise, print "save for now".
+    </h3>
+    <p>
+        let money = 7836;
+        if (money >= 500) {
+            console.log('you can buy a gift');
+        } else {
+            console.log('save for now');
+        }
+    </p>
 
-                13–19: Teenager
-
-                20–59: Adult
-
-                60 and above: Senior Citizen
-            </h3>
-            <p>
-                let age = Number(prompt('enter your age'))
-                if (0 <= 12) { console.log('child') } else if (13 <=19) { console.log('teenager') } else if (20 <=59) {
-                    console.log('adult') } else { console.log('senior citizen') } </p>
-
-
-
-                    <h3>Question 5: Electricity Bill Calculator
-                        Take the number of electricity units consumed and calculate the bill using these rates:
-
-                        First 100 units: Rs. 10 per unit
-
-                        Next 100 units: Rs. 15 per unit
-
-                        Above 200 units: Rs. 20 per unit
-
-                        Calculate the bill using cumulative rates. For example, the first 100 units are charged at Rs.
-                        10 each, and only
-                        the units above 100 are charged at the next rate.</h3>
-                    <p>
-                        let units = Number(prompt("Enter Units"));
-    let bill = 0;
-    if (units <= 100) {
-        bill = units * 10;
-    }
-    else if (units <= 200) {
-        bill = 100 * 10 + (units - 100) * 15;
-    }
-    else {
-        bill = 100 * 10 + 100 * 15 + (units - 200) * 20;
-    }
-    console.log(bill);
-                    </p>
-
-
-
-                    <h3>
-                        Question 6: Traffic Light
-                        Take a traffic light color as input.
-
-                        Red: "Stop"
-
-                        Yellow: "Ready"
-
-                        Green: "Go"
-
-                        Any other color: "Invalid Color"
-                    </h3>
-                    <p>
-                        let trafficLight = 'red'
-                        if (trafficLight === 'green') {
-                        console.log('GO')
-                        }
-                        else if (trafficLight === 'red') {
-                        console.log('STOP')
-                        }
-                        else if (trafficLight === 'yellow') {
-                        console.log('READY')
-                        }
-                        else {
-                        console.log('INVALID COLOR')
-                        }
-                    </p>
-
-
-
-                    <h3>
-                        Question 7: Pocket Money Checker
-                        Take the amount of pocket money.
-
-                        If it is greater than Rs. 500, print "You can buy a gift".
-
-                        Otherwise, print "Save your money".
-
-                    </h3>
-                    <p>
-                        let money = 7836
-                        if (money >= 500) {
-                        console.log('you can buy a gift')
-                        }
-                        else {
-                        console.log('save for now')
-                        }
-                    </p>
-
-
-
-                    <h3>
-                        Question 8: Free Delivery Checker
-                        Take the total shopping amount.
-
-                        If it is Rs. 2,000 or more, print "Free Delivery".
-
-                        Otherwise, print "Delivery Charges Apply".
-                    </h3>
-                    <p> let amount = 7546
-                        if (amount > 2000) {
-                        console.log('FREE DELIVERY')
-                        }
-                        else {
-                        console.log('DELIVERY CHARGES APPLY')
-                        }</p>
+    <h3>
+        Question 8: Free Delivery Checker
+        Take the total shopping amount. If more than Rs. 2,000, print "FREE DELIVERY". Otherwise, print "DELIVERY CHARGES APPLY".
+    </h3>
+    <p> 
+        let amount = 7546;
+        if (amount > 2000) {
+            console.log('FREE DELIVERY');
+        } else {
+            console.log('DELIVERY CHARGES APPLY');
+        }
+    </p>
 </body>
+
 <script>
     let FirstName = 'Amna';
     let LastName = 'Arif';
-    console.log(FirstName + ' ' + LastName)
+    console.log(FirstName + ' ' + LastName);
 
-    let num1 = 3
-    let num2 = 6
-    let num3 = 9
-    console.log(num1 + num2 + num3)
-    console.log(num1 - num2 - num3)
-    console.log(num1 * num2 * num3)
-    console.log(num1 / num2 / num3)
+    let num1 = 3;
+    let num2 = 6;
+    let num3 = 9;
+    console.log(num1 + num2 + num3);
+    console.log(num1 - num2 - num3);
+    console.log(num1 * num2 * num3);
+    console.log(num1 / num2 / num3);
 
-    let temp = Number(prompt('enter temperature: '))
+    let temp = Number(prompt('enter temperature: '));
     if (temp <= 0) {
-        console.log('freezing')
-    }
-    else {
-        console.log('not freezing')
+        console.log('freezing');
+    } else {
+        console.log('not freezing');
     }
 
-    let age = Number(prompt('enter your age'))
+    let age = Number(prompt('enter your age'));
     if (0 <= 12) {
-        console.log('child')
-    }
-    else if (13 <= 19) {
-        console.log('teenager')
-    }
-    else if (20 <= 59) {
-        console.log('adult')
-    }
-    else {
-        console.log('senior citizen')
+        console.log('child');
+    } else if (13 <= 19) {
+        console.log('teenager');
+    } else if (20 <= 59) {
+        console.log('adult');
+    } else {
+        console.log('senior citizen');
     }
 
     let units = Number(prompt("Enter Units"));
     let bill = 0;
     if (units <= 100) {
         bill = units * 10;
-    }
-    else if (units <= 200) {
+    } else if (units <= 200) {
         bill = 100 * 10 + (units - 100) * 15;
-    }
-    else {
+    } else {
         bill = 100 * 10 + 100 * 15 + (units - 200) * 20;
     }
     console.log(bill);
 
-    let trafficLight = 'red'
+    let trafficLight = 'red';
     if (trafficLight === 'green') {
-        console.log('GO')
-    }
-    else if (trafficLight === 'red') {
-        console.log('STOP')
-    }
-    else if (trafficLight === 'yellow') {
-        console.log('READY')
-    }
-    else {
-        console.log('INVALID COLOR')
+        console.log('GO');
+    } else if (trafficLight === 'red') {
+        console.log('STOP');
+    } else if (trafficLight === 'yellow') {
+        console.log('READY');
+    } else {
+        console.log('INVALID COLOR');
     }
 
-    let money = 7836
+    let money = 7836;
     if (money >= 500) {
-        console.log('you can buy a gift')
-    }
-    else {
-        console.log('save for now')
+        console.log('you can buy a gift');
+    } else {
+        console.log('save for now');
     }
 
-    let amount = 7546
+    let amount = 7546;
     if (amount > 2000) {
-        console.log('FREE DELIVERY')
-    }
-    else {
-        console.log('DELIVERY CHARGES APPLY')
+        console.log('FREE DELIVERY');
+    } else {
+        console.log('DELIVERY CHARGES APPLY');
     }
 </script>
 
